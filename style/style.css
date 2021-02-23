@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#view-main
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+#main-gallery
+{
+    width: 1100px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid black; */
+}
+
+.main-gallery-sides
+{
+    width: 700px;
+    height: 550px;
+}
+
+.main-gallery-updown
+{
+    width: 700;
+    height: 250px;
+}
+
+.main-gallery-minisides
+{
+    width: 350px;
+    height: 260px;
+}
+
+
+#maing-man
+{
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2018/01/1-570x518.jpg);
+    /* height: 550px; */
+    /* width: 700px; */
+    cursor: pointer;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#maing-woman
+{
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/cat-2-copyright-1170x514.jpg);
+    /* height: 250px; */
+    /* width: 300px; */
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#maing-winter
+{
+    background-image:url(http://coleo.themerex.net/wp-content/uploads/2018/01/3_01-570x518.jpg);
+    /* height: 250px;
+    width: 300px; */
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#maing-hipster
+{
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2018/01/4-570x518.jpg);
+    /* height: 250px; */
+    /* width: 300px; */
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#maing-man > .text-main
+{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 70px;
+    left: -60px;
+}
+
+#maing-woman > .text-main
+{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 390px;
+    left: 340px;
+}
+
+#maing-winter > .text-main
+{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 80px;
+    left: 350px;
+
+}
+
+.layer > .text-main
+{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 80px;
+    left: -60px;
+    transition: color;
+    transition-duration: 0.3s;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0));
+    position: absolute;
+    /* width: 320px;
+    height: 260px; */
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
+
+.layer:hover
+{
+    /* background-image: none; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* opacity: 0%; */
+}
+
+.layer:hover > .text-main
+{
+    color: white;
+}
+
+.main-gallery-minisides > .layer {
+    width: 320px;
+    height: 260px;
+}
+
+#maing-man > .layer
+{
+    width: 380px;
+    height: 550px;
+}
+
+#maing-woman > .layer
+{
+    width: 680px;
+    height: 250px;
+}
